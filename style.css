@@ -23,10 +23,32 @@
   font-size: 0.8rem !important;
   letter-spacing: 1px !important;
 }
-
+.footer-style {
+  margin: 0 !important;
+  padding: 1.5rem 0;
+}
+.footer-style div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.small-icon {
+  max-width: 5%;
+  padding: 0 0.4rem;
+}
+.space {
+  margin: 0 0 8rem 0;
+}
 .button-light {
   margin: 0.5rem 0 !important;
-  padding: 1rem 0 !important;
+  padding: 1rem 1.5rem !important;
   max-width: 50%;
   text-shadow: none !important;
   letter-spacing: 4px;
@@ -34,10 +56,11 @@
 }
 .button-light a {
   color: #000000 !important;
+  text-decoration: none;
 }
 .button {
   margin: 0.5rem 0 !important;
-  padding: 1rem 0 !important;
+  padding: 1rem 1.5rem !important;
   max-width: 40%;
   text-shadow: none !important;
   letter-spacing: 4px;
@@ -50,6 +73,12 @@
 }
 .logo {
   max-width: 10%;
+}
+.title-a {
+  text-align: left;
+  font-family: "Roboto-Thin";
+  font-size: 2.2rem;
+  letter-spacing: 3px;
 }
 .title-b {
   margin: 0 0 1rem 0;
@@ -65,10 +94,16 @@
   text-align: center;
 }
 .title-d {
-  font-family: "Roboto-light";
+  font-family: "Roboto-Light";
   font-size: 1rem;
   text-align: center;
   letter-spacing: 1px;
+}
+.title-e {
+  font-family: "Roboto-Light";
+  font-size: 1.1rem;
+  text-align: left;
+  letter-spacing: 2px;
 }
 .info-a {
   margin: 0;
@@ -76,6 +111,11 @@
   font-size: 1.8rem;
   text-align: center;
   letter-spacing: 1px;
+}
+.small-text {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-family: "Roboto-Light";
 }
 .important-text {
   font-family: "Roboto-Bold";
@@ -93,9 +133,65 @@
   padding: 0.5rem 1rem;
 }
 
+.svg-container {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  margin: 3rem 0;
+}
+.svg-r {
+  position: absolute;
+  right: -14px;
+}
+.svg-l {
+  position: absolute;
+  left: -14px;
+}
+.date-text a {
+  letter-spacing: 3px;
+  font-size: 1rem;
+  font-family: "Roboto-Medium" !important;
+}
+.item-set-container {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ffffff;
+}
+.item-set-container:last-of-type {
+  border: none;
+}
+.item-set-title {
+  font-family: "Roboto-Medium";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0 0 1rem 0;
+}
+.item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item {
+  width: 50%;
+}
+.item p {
+  font-family: "Roboto-Thin";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.item:nth-child(2) {
+  text-align: right;
+}
+
 @media (min-width: 600px) {
   .button-group {
     width: 40%;
+  }
+  .title-a {
+    font-size: 2.5rem;
   }
   .title-b {
     font-size: 1.4rem;
@@ -106,7 +202,20 @@
   .title-d {
     font-size: 1.6rem;
   }
+  .title-e {
+    font-family: "Roboto-Light";
+    font-size: 1.4rem;
+  }
   .info-a {
     font-size: 2.5rem;
+  }
+  .date-text a {
+    font-size: 1.1rem;
+  }
+  .item-set-title {
+    font-size: 1.1rem;
+  }
+  .item p {
+    font-size: 1.1rem;
   }
 }
