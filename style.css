@@ -87,8 +87,26 @@
   align-items: center;
   margin: 2rem 0 4rem 0;
 }
-nav {
+.menu {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+}
+
+@media (min-width: 600px) {
+  .button-group {
+    width: 40%;
+  }
+  .title-b {
+    font-size: 1.4rem;
+  }
+  .title-c {
+    font-size: 1.7rem;
+  }
+  .title-d {
+    font-size: 1.6rem;
+  }
+  .info-a {
+    font-size: 2.5rem;
+  }
 }
