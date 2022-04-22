@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="jqm/custom-theme.css" />
+    <script src="./timer/timer.js"></script>
+    <script src="jqm/jquery.min.js"></script>
+    <script src="jqm/jquery.mobile-1.4.5.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page" id="home">
+      <nav class="menu" data-role="header">
+        <h1>Hamburguer btn</h1>
+        <img class="logo" src="./assets/icons/logo.png" />
+      </nav>
+      <div role="main" class="ui-content">
+        <section class="center-vertical">
+          <h2 class="title-c">
+            Check out the <span class="important-text">dates</span><br />
+            and
+            <span class="important-text">time of the concerts</span>
+          </h2>
+          <div class="center-vertical button-group">
+            <button class="button-light" data-theme="b">
+              <a href="#lineup">Line up</a>
+            </button>
+            <button class="button"><a>Info</a></button>
+          </div>
+        </section>
+
+        <section class="center-vertical">
+          <h2 class="title-b">Time remaining until Tomorrowland starts</h2>
+          <p class="info-a" id="time"></p>
+        </section>
+        <section class="center-vertical">
+          <h2 class="title-d">Festival Days</h2>
+        </section>
+      </div>
+      <div data-role="footer" class="center-vertical footer-style">
+        <div>
+          <button class="button"><a>Creadores</a></button>
+        </div>
+        <div>
+          <p class="small-text">Designed by Dreamteam</p>
+        </div>
+        <div class="footer-icons">
+          <img class="small-icon" src="./assets/icons/instagram.png" />
+          <img class="small-icon" src="./assets/icons/spotify.png" />
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="lineup">
+      <nav class="menu" data-role="header">
+        <h1>Hamburguer btn</h1>
+        <img class="logo" src="./assets/icons/logo.png" />
+      </nav>
+
+      <div role="main" class="ui-content">
+        <section class="space">
+          <div>
+            <h1 class="title-a">
+              Our <span class="important-text">line up</span>
+            </h1>
+            <div class="svg-container">
+              <svg
+                class="svg-r"
+                width="151"
+                height="109"
+                viewBox="0 0 151 109"
+                fill="none"
+              >
+                <path
+                  d="M232.865 37.5C232.865 42.1686 229.839 46.708 224.149 50.9162C218.468 55.1172 210.215 58.9215 199.973 62.1251C179.493 68.5304 151.171 72.5 119.865 72.5C88.5593 72.5 60.237 68.5304 39.7579 62.1251C29.5154 58.9215 21.2629 55.1172 15.5819 50.9162C9.89121 46.708 6.86523 42.1686 6.86523 37.5C6.86523 32.8314 9.89121 28.292 15.5819 24.0838C21.2629 19.8828 29.5154 16.0785 39.7579 12.8749C60.237 6.46956 88.5593 2.5 119.865 2.5C151.171 2.5 179.493 6.46956 199.973 12.8749C210.215 16.0785 218.468 19.8828 224.149 24.0838C229.839 28.292 232.865 32.8314 232.865 37.5Z"
+                  stroke="#FF28A9"
+                />
+                <path
+                  d="M229.242 35.0744C230.03 39.6759 227.815 44.6612 222.916 49.7701C218.027 54.8703 210.535 60.0138 200.981 64.9014C181.878 74.6738 154.633 83.3701 123.777 88.6578C92.921 93.9456 64.3351 94.8169 43.0683 91.9626C32.4319 90.535 23.6554 88.1793 17.3465 84.9982C11.0268 81.8116 7.27752 77.8486 6.48897 73.247C5.70041 68.6455 7.91618 63.6602 12.8143 58.5513C17.7041 53.4511 25.1954 48.3076 34.7497 43.42C53.8527 33.6476 81.0976 24.9513 111.954 19.6636C142.81 14.3758 171.396 13.5045 192.662 16.3588C203.299 17.7864 212.075 20.1422 218.384 23.3232C224.704 26.5098 228.453 30.4728 229.242 35.0744Z"
+                  stroke="#FF28A9"
+                />
+              </svg>
+            </div>
+            <h3 class="title-e">
+              Check out the <span class="important-text">dates</span> <br />
+              and
+              <span class="important-text">time of the shows</span>
+            </h3>
+            <div class="svg-container">
+              <svg
+                class="svg-l"
+                width="144"
+                height="116"
+                viewBox="0 0 144 116"
+                fill="none"
+              >
+                <path
+                  d="M-89.0366 78.2567C-89.1946 73.5907 -86.324 68.9515 -80.779 64.5531C-75.2435 60.1623 -67.1245 56.0808 -56.9963 52.5324C-36.7457 45.4375 -8.57399 40.5116 22.714 39.452C54.002 38.3924 82.4425 41.4011 103.127 47.1097C113.472 49.9648 121.848 53.4876 127.668 57.4939C133.498 61.507 136.676 65.9414 136.834 70.6073C136.992 75.2733 134.121 79.9125 128.576 84.3109C123.041 88.7017 114.922 92.7832 104.794 96.3316C84.543 103.426 56.3713 108.352 25.0833 109.412C-6.20473 110.472 -34.6452 107.463 -55.3293 101.754C-65.6744 98.8992 -74.0509 95.3764 -79.8708 91.3701C-85.7007 87.357 -88.8786 82.9226 -89.0366 78.2567Z"
+                  stroke="#FF28A9"
+                />
+                <path
+                  d="M-85.3339 80.5583C-86.2778 75.9861 -84.232 70.9287 -79.5096 65.6569C-74.7952 60.3941 -67.4823 55 -58.0989 49.7918C-39.3377 39.3785 -12.4027 29.765 18.2568 23.4359C48.9163 17.1068 77.4563 15.2685 98.8075 17.4014C109.486 18.4681 118.337 20.5254 124.75 23.4912C131.174 26.462 135.055 30.2959 135.999 34.8681C136.943 39.4403 134.897 44.4977 130.175 49.7695C125.461 55.0322 118.148 60.4264 108.764 65.6345C90.0031 76.0479 63.0681 85.6614 32.4086 91.9905C1.74914 98.3196 -26.7909 100.158 -48.142 98.025C-58.8207 96.9583 -67.6719 94.9009 -74.0849 91.9352C-80.5088 88.9644 -84.3901 85.1305 -85.3339 80.5583Z"
+                  stroke="#FF28A9"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div
+            data-role="collapsibleset"
+            data-inset="false"
+            data-theme="b"
+            data-iconpos="right"
+          >
+            <div data-role="collapsible">
+              <h3 class="date-text">Day one 12/04</h3>
+              <div class="item-set-container">
+                <p class="item-set-title">Aurora Stage</p>
+                <div class="item-container">
+                  <div class="item"><p>Tiesto</p></div>
+                  <div class="item"><p>7PM</p></div>
+                </div>
+                <div class="item-container">
+                  <div class="item"><p>David Guetta</p></div>
+                  <div class="item"><p>10PM</p></div>
+                </div>
+              </div>
+              <div class="item-set-container">
+                <p class="item-set-title">Fisher Stage</p>
+                <div class="item-container">
+                  <div class="item"><p>Alesso</p></div>
+                  <div class="item"><p>6PM</p></div>
+                </div>
+                <div class="item-container">
+                  <div class="item"><p>Dimitri Vegas</p></div>
+                  <div class="item"><p>8:30PM</p></div>
+                </div>
+              </div>
+            </div>
+            <div data-role="collapsible">
+              <h3 class="date-text">Day two 13/04</h3>
+              <div class="item-set-container">
+                <p class="item-set-title">Aurora Stage</p>
+                <div class="item-container">
+                  <div class="item"><p>Afrojack</p></div>
+                  <div class="item"><p>7:30PM</p></div>
+                </div>
+                <div class="item-container">
+                  <div class="item"><p>Trevor Guthrie</p></div>
+                  <div class="item"><p>9PM</p></div>
+                </div>
+              </div>
+              <div class="item-set-container">
+                <p class="item-set-title">Fisher Stage</p>
+                <div class="item-container">
+                  <div class="item"><p>Martin Garrix</p></div>
+                  <div class="item"><p>6PM</p></div>
+                </div>
+                <div class="item-container">
+                  <div class="item"><p>Aly and Fila</p></div>
+                  <div class="item"><p>11PM</p></div>
+                </div>
+              </div>
+            </div>
+            <div data-role="collapsible">
+              <h3 class="date-text">Day three 14/04</h3>
+              <div class="item-set-container">
+                <p class="item-set-title">Aurora Stage</p>
+                <div class="item-container">
+                  <div class="item"><p>Calvin Harris</p></div>
+                  <div class="item"><p>17:30PM</p></div>
+                </div>
+                <div class="item-container">
+                  <div class="item"><p>Steve Aoki</p></div>
+                  <div class="item"><p>8PM</p></div>
+                </div>
+              </div>
+              <div class="item-set-container">
+                <p class="item-set-title">Fisher Stage</p>
+                <div class="item-container">
+                  <div class="item"><p>Marshmello</p></div>
+                  <div class="item"><p>6:45PM</p></div>
+                </div>
+                <div class="item-container">
+                  <div class="item"><p>Armin Van Buuren</p></div>
+                  <div class="item"><p>10PM</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="center-vertical"></section>
+      </div>
+      <div data-role="footer" class="center-vertical footer-style">
+        <div>
+          <button class="button"><a>Creadores</a></button>
+        </div>
+        <div>
+          <p class="small-text">Designed by Dreamteam</p>
+        </div>
+        <div class="footer-icons">
+          <img class="small-icon" src="./assets/icons/instagram.png" />
+          <img class="small-icon" src="./assets/icons/spotify.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
