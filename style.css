@@ -105,6 +105,13 @@
   text-align: left;
   letter-spacing: 2px;
 }
+.title-f {
+  font-family: "Roboto-Thin";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0.5rem 0;
+}
 .info-a {
   margin: 0;
   font-family: "Roboto-Bold";
@@ -189,6 +196,26 @@
   width: 100%;
   margin: 2rem;
 }
+.map-full {
+  width: 100%;
+  margin: 2rem;
+}
+
+.location-container {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.location-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.location-item img {
+  width: 20px;
+  margin: 0 10px;
+}
+
 @media (min-width: 600px) {
   .button-group {
     width: 40%;
@@ -237,6 +264,10 @@
     width: 50%;
     margin: 2rem;
   }
+  .map-full {
+    width: 100%;
+    margin: 2rem;
+  }
   .small-icon {
     max-width: 3%;
     padding: 0 0.6rem;
@@ -253,12 +284,17 @@
   .button {
     max-width: 30%;
   }
-  .image-full {
-    width: 60%;
+
+  .map-full {
+    width: 100%;
     margin: 2rem;
   }
   .small-icon {
     max-width: 2%;
     padding: 0 0.4rem;
+  }
+  .limit {
+    margin: 0 auto;
+    max-width: 70% !important;
   }
 }
