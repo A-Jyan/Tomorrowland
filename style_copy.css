@@ -220,4 +220,35 @@
   }
 }
 
-/* De acá para abajo */
+/* Cambios ale */
+.card-img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card {
+  max-height: 100%;
+  max-width: 100%;
+  background-color: white;
+  padding: 16px;
+}
+
+.card-sub {
+  color: #FF28A9;
+  font-size: 12px;
+}
+
+.card-title {
+  color: #0D0D0D;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-text {
+  color: #616161;
+  font-size:12px;
+}
+
+.card-container {
+  max-width: 128px;
+}
