@@ -221,6 +221,8 @@
 }
 
 /* Cambios ale */
+
+/* card */
 .card-img {
   max-height: 100%;
   max-width: 100%;
@@ -252,3 +254,8 @@
 .card-container {
   max-width: 100%;
 }
+
+/* card ends here */
+
+
+/* carrousel */
