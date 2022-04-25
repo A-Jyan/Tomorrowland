@@ -228,7 +228,7 @@
   max-width: 100%;
 }
 
-.card {
+.card-body {
   max-height: 100%;
   max-width: 100%;
   background-color: white;
@@ -259,3 +259,41 @@
 
 
 /* carrousel */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button-wrapper {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  transition: all 1s ease;
+}
+
+.card {
+  min-width: 60%;
+  height: 100%;
+  margin: 2rem;
+  display: inline-block;
+}
+
+
