@@ -17,21 +17,27 @@ const cardCount = carousel.querySelectorAll("[data-target='card']").length;
 // Define an offset property to dynamically update by clicking the button controls
 // as well as a maxX property so the carousel knows when to stop at the upper limit
 let offset = 0;
-const maxX = -((cardCount / 2) * card.offsetWidth + 
-               (cardMarginRight * (cardCount / 2)) - 
-               card.offsetWidth - cardMarginRight);
 
 
 // Add the click events
+let clickLeft = 0
+
 leftButton.addEventListener("click", function() {
-  if (offset !== 0) {
-    offset += card.offsetWidth + cardMarginRight;
+  clickRight = 0
+  let totalClicks = clickLeft++
+  if (totalClicks <= 1 && offset != 0) {
+    offset += card.offsetWidth + cardMarginRight ;
     carousel.style.transform = `translateX(${offset}px)`;
     }
+    console.log(totalClicks)
+    console.log(offset)
 })
-  
+
+let clickRight = 0
 rightButton.addEventListener("click", function() {
-  if (offset !== maxX) {
+  clickLeft = 0
+  let totalClicks = clickRight++
+  if (totalClicks <= 1) {
     offset -= card.offsetWidth + cardMarginRight;
     carousel.style.transform = `translateX(${offset}px)`;
   }

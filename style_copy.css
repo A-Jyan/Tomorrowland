@@ -218,21 +218,26 @@
   .item p {
     font-size: 1.1rem;
   }
+
+
 }
 
 /* Cambios ale */
 
 /* card */
-.card-img {
-  max-height: 100%;
-  max-width: 100%;
-}
 
-.card-body {
-  max-height: 100%;
-  max-width: 100%;
+.card {
+  width: 200px;
+  height: 100%;
+  margin: 2rem;
+  display: inline-block;
   background-color: white;
   padding: 16px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
 }
 
 .card-sub {
@@ -255,6 +260,15 @@
   max-width: 100%;
 }
 
+@media (min-width: 500px) {
+  .card {
+    width: 900px;
+  }
+  }
+
+
+
+
 /* card ends here */
 
 
@@ -265,17 +279,21 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
   margin: 0 auto;
 }
 
-.button-wrapper {
-  width: 20%;
+#button-left{
+  width: 10%;
   padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: 5px;
+}
+
+#button-right{
+  width: 10%;
+  padding: 10px;
+  position: absolute;
+  right: 5px;
 }
 
 .carousel {
@@ -289,11 +307,5 @@
   transition: all 1s ease;
 }
 
-.card {
-  min-width: 60%;
-  height: 100%;
-  margin: 2rem;
-  display: inline-block;
-}
 
 
