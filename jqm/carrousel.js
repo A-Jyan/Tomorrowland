@@ -25,7 +25,7 @@ let clickLeft = 0
 leftButton.addEventListener("click", function() {
   clickRight = 0
   let totalClicks = clickLeft++
-  if (totalClicks <= 3 && offset != 0) {
+  if (totalClicks <= 3 && offset != 0 ) {
     offset += card.offsetWidth + cardMarginRight ;
     carousel.style.transform = `translateX(${offset}px)`;
     }
@@ -37,7 +37,12 @@ let clickRight = 0
 rightButton.addEventListener("click", function() {
   clickLeft = 0
   let totalClicks = clickRight++
-  if (totalClicks <= 3) {
+  if (totalClicks <= 3 && window.innerWidth <= 320) {
+    offset -= card.offsetWidth + cardMarginRight;
+    carousel.style.transform = `translateX(${offset}px)`;
+  }
+  else if (totalClicks <= 1 && window.innerWidth > 320)
+  {
     offset -= card.offsetWidth + cardMarginRight;
     carousel.style.transform = `translateX(${offset}px)`;
   }
