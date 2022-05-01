@@ -218,6 +218,94 @@
   .item p {
     font-size: 1.1rem;
   }
+
+
 }
 
-/* De acá para abajo */
+/* Cambios ale */
+
+/* card */
+
+.card {
+  width: 200px;
+  height: 100%;
+  margin: 2rem;
+  display: inline-block;
+  background-color: white;
+  padding: 16px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-sub {
+  color: #FF28A9;
+  font-size: 12px;
+}
+
+.card-title {
+  color: #0D0D0D;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-text {
+  color: #616161;
+  font-size:12px;
+}
+
+.card-container {
+  max-width: 100%;
+}
+
+@media (min-width: 500px) {
+  .card {
+    width: 900px;
+  }
+  }
+
+
+
+
+/* card ends here */
+
+
+/* carrousel */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#button-left{
+  width: 10%;
+  padding: 10px;
+  position: absolute;
+  left: 5px;
+}
+
+#button-right{
+  width: 10%;
+  padding: 10px;
+  position: absolute;
+  right: 5px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  transition: all 1s ease;
+}
+
+
+

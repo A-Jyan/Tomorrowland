@@ -7,12 +7,13 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="style_copy.css"/>
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css"/>
     <link rel="stylesheet" href="jqm/custom-theme.css" />
     <script src="./timer/timer.js"></script>
     <script src="jqm/jquery.min.js"></script>
     <script src="jqm/jquery.mobile-1.4.5.js"></script>
+    
   </head>
 
   <body>
@@ -42,6 +43,55 @@
         </section>
         <section class="center-vertical">
           <h2 class="title-d">Festival Days</h2>
+          <!-- aca estuvo ale programando -->
+          <!-- carrousel -->
+          <div class="wrapper">
+            <ul class="carousel" data-target="carousel">
+              <!-- card -->
+              <li class="card" data-target="card">
+            <img class="card-img" src="jqm/images/card-img/img-card-1.jpg" alt="">
+            <div class="card-container">
+            <p class="card-sub">Day one</p>
+            <h3 class="card-title">Nicky Romero</h3>
+            <p class="card-text"> Nicky Romero &  Laidback Luke honor Avicii </p>
+          </div>
+              </li>
+               <!-- card ends here -->
+
+              <!-- card -->
+              <li class="card" data-target="card">
+                <img class="card-img" src="jqm/images/card-img/img-card-1.jpg" alt="">
+                <div class="card-container">
+                <p class="card-sub">Day one</p>
+                <h3 class="card-title">Nicky Romero</h3>
+                <p class="card-text"> Nicky Romero &  Laidback Luke honor Avicii </p>
+              </div>
+                  </li>
+                   <!-- card ends here -->
+                   
+              <!-- card -->
+              <li class="card" data-target="card">
+                <img class="card-img" src="jqm/images/card-img/img-card-1.jpg" alt="">
+                <div class="card-container">
+                <p class="card-sub">Day one</p>
+                <h3 class="card-title">Nicky Romero</h3>
+                <p class="card-text"> Nicky Romero &  Laidback Luke honor Avicii </p>
+              </div>
+                  </li>
+                   <!-- card ends here -->
+            
+            </ul>
+            <div id="button-left">
+              <button  data-action="slideLeft"> < </button>
+            </div>
+            <div id="button-right">
+              <button data-action="slideRight"> > </button>
+            </div>
+            
+          </div>
+          
+
+
         </section>
       </div>
       <div data-role="footer" class="center-vertical footer-style">
@@ -214,5 +264,6 @@
         </div>
       </div>
     </div>
+    <script src="jqm/carrousel.js"></script>
   </body>
 </html>
