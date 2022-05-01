@@ -72,7 +72,7 @@
   margin: 0 !important;
 }
 .logo {
-  max-width: 10%;
+  max-width: 100%;
 }
 .title-a {
   text-align: left;
@@ -127,9 +127,12 @@
   align-items: center;
   margin: 2rem 0 4rem 0;
 }
+
 .menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 1rem;
 }
 
@@ -221,3 +224,131 @@
 }
 
 /* De acá para abajo */
+
+.nav-modal{
+  height: 60px;
+}
+
+.ui-btn-icon-notext.ui-btn-left{
+  left: 45% !important;
+  top: 0.1em !important;
+  font-size: 30px !important;
+}
+
+.hide {
+  opacity:0 ;
+}
+
+.ui-dialog-contain{
+  width: 60% !important;
+}
+
+.ui-dialog-contain {
+	width: 96% !important;
+	max-width: 500px !important;
+  max-height: 700px !important;
+	margin: 10% auto 15px auto;
+	padding: 0;
+	position: relative;
+	top: -15px;
+}
+
+.title-modal {
+  size: 2rem !important;
+}
+
+/* cards */
+
+.card {
+  /* cambié width */
+  width: 189px;
+  /* cambié height */
+  height: 306px;
+  /* cambio a margin : 0 */
+  margin: 0px;
+  display: inline-block;
+  background-color: white;
+  /* cambié padding */
+  padding: 45px 50px;
+}
+
+.card-img {
+  /* cambié height */
+  height: 70%;
+  width: 100%;
+}
+
+.card-sub {
+  color: #FF28A9;
+  font-size: 12px;
+}
+
+.card-title {
+  color: #0D0D0D;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-text {
+  color: #616161;
+  font-size:12px;
+}
+
+.card-container {
+  max-width: 100%;
+}
+
+@media (min-width: 500px) {
+  .card {
+    width: 223px;
+  }
+  /* Lo de abajo es nuevo */
+  .ui-dialog-contain {
+    width: 99% !important;
+	  max-width: 99% !important;
+    top: -40px !important;
+  }
+
+  .ui-btn-icon-notext.ui-btn-left {
+    left: 50% !important;
+   }
+  }
+
+
+/* card ends here */
+
+
+/* carrousel */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#button-left{
+  width: 10%;
+  padding: 10px;
+  position: absolute;
+  left: 5px;
+}
+
+#button-right{
+  width: 10%;
+  padding: 10px;
+  position: absolute;
+  right: 5px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  transition: all 1s ease;
+}
