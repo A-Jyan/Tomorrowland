@@ -72,7 +72,7 @@
   margin: 0 !important;
 }
 .logo {
-  max-width: 10%;
+  max-width: 100%;
 }
 .title-a {
   text-align: left;
@@ -127,9 +127,12 @@
   align-items: center;
   margin: 2rem 0 4rem 0;
 }
+
 .menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 1rem;
 }
 
@@ -221,3 +224,5 @@
 }
 
 /* De acá para abajo */
+
+
