@@ -50,9 +50,9 @@
   margin: 0 0 8rem 0;
 }
 .button-light {
+  max-width: 100%;
   margin: 0.5rem 0 !important;
   padding: 1rem 1.5rem !important;
-  max-width: 80%;
   text-shadow: none !important;
   letter-spacing: 4px;
   font-family: "Roboto-Light" !important;
@@ -61,21 +61,27 @@
   color: #000000 !important;
   text-decoration: none;
 }
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+}
 .button {
+  max-width: 100%;
   margin: 0.5rem 0 !important;
   padding: 1rem 1.5rem !important;
-  max-width: 50%;
   text-shadow: none !important;
   letter-spacing: 4px;
   font-family: "Roboto-Light" !important;
   border-width: 3px !important;
 }
 .button-group {
-  width: 80%;
+  width: 90%;
   margin: 0 !important;
 }
 .logo {
-  max-width: 10%;
+  max-width: 100%;
 }
 .title-a {
   text-align: left;
@@ -137,9 +143,12 @@
   align-items: center;
   margin: 2rem 0 4rem 0;
 }
+
 .menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 1rem;
 }
 
@@ -219,7 +228,178 @@
   margin: 0 10px;
 }
 
+.nav-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  height: 60px;
+}
+
+.ui-btn-icon-notext.ui-btn-left {
+  left: 45% !important;
+  top: 0.1em !important;
+  font-size: 30px !important;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.ui-dialog-contain {
+  width: 60% !important;
+}
+
+.ui-dialog-contain {
+  width: 96% !important;
+  max-width: 500px !important;
+  max-height: 700px !important;
+  margin: 10% auto 15px auto;
+  padding: 0;
+  position: relative;
+  top: -15px;
+}
+
+.title-modal {
+  size: 2rem !important;
+}
+
+.card {
+  width: 189px;
+  height: 306px;
+  margin: 0px;
+  display: inline-block;
+  background-color: white;
+  padding: 45px 50px;
+}
+
+.card-img {
+  height: 70%;
+  width: 100%;
+}
+
+.card-sub {
+  color: #ff28a9;
+  font-size: 12px;
+}
+
+.card-title {
+  color: #0d0d0d;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-text {
+  color: #616161;
+  font-size: 12px;
+}
+
+.card-container {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#button-left {
+  width: 10%;
+  padding: 10px;
+  position: absolute;
+  left: 5px;
+}
+#button-left button {
+  background-color: #000000;
+}
+
+#button-right {
+  width: 10%;
+  padding: 10px;
+  position: absolute;
+  right: 5px;
+}
+#button-right button {
+  background-color: black;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  left: 0;
+  transition: all 1s ease;
+}
+
+.icons_footer {
+  max-width: 100%;
+}
+.special-icon {
+  padding: 10px;
+  min-width: 10% !important;
+  max-width: 10% !important ;
+}
+
+@media (min-width: 500px) {
+  .special-btn {
+    max-width: 10% !important;
+  }
+  a {
+    min-width: 60%;
+  }
+  a .pop {
+    min-width: 62% !important;
+  }
+  .button-light {
+    min-width: 90%;
+  }
+  .button {
+    min-width: 90%;
+  }
+  .card {
+    width: 223px;
+  }
+  .ui-dialog-contain {
+    width: 99% !important;
+    max-width: 99% !important;
+    top: -40px !important;
+  }
+
+  .ui-btn-icon-notext.ui-btn-left {
+    left: 50% !important;
+  }
+}
+
 @media (min-width: 600px) {
+  .carousel {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transition: all 1s ease;
+  }
+  #button-left {
+    display: none;
+  }
+  #button-right button {
+    display: none;
+  }
+  .icons_footer {
+    max-width: 100%;
+  }
+  .special-icon {
+    padding: 10px;
+    min-width: 5% !important;
+    max-width: 5% !important ;
+  }
   .button-group {
     width: 40%;
   }
@@ -253,7 +433,6 @@
   .item p {
     font-size: 1.1rem;
   }
-  
   .button-light {
     max-width: 40%;
     padding: 1rem 0.3rem;
@@ -289,5 +468,8 @@
   .limit {
     margin: 0 auto;
     max-width: 70% !important;
+  }
+  a .pop {
+    min-width: 40% !important;
   }
 }
