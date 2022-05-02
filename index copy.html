@@ -66,7 +66,7 @@
     
             <!-- card -->
             <div class="card" data-target="card">
-          <img class="card-img" src="jqm/images/card-img/img-card-1.jpg" alt="">
+          <img class="card-img" src="assets/icons/img_home_01.jpg" alt="">
           <div class="card-container">
           <p class="card-sub">Day one</p>
           <h3 class="card-title">Nicky Romero</h3>
@@ -77,7 +77,7 @@
 
             <!-- card -->
             <div class="card" data-target="card">
-              <img class="card-img" src="jqm/images/card-img/img-card-1.jpg" alt="">
+              <img class="card-img" src="assets/icons/img_home_02.jpg" alt="">
               <div class="card-container">
               <p class="card-sub">Day one</p>
               <h3 class="card-title">Nicky Romero</h3>
@@ -88,7 +88,7 @@
                  
             <!-- card -->
             <div class="card" data-target="card">
-              <img class="card-img" src="jqm/images/card-img/img-card-1.jpg" alt="">
+              <img class="card-img" src="assets/icons/img_home_03.jpg" alt="">
               <div class="card-container">
               <p class="card-sub">Day one</p>
               <h3 class="card-title">Nicky Romero</h3>
@@ -115,14 +115,30 @@
     </div>
   </div>
 
+<!--OUR TEAM-->
+
   <div data-role="page" data-dialog="true" id="home2">
+
+  <!-- navbar -->
+  <div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+    <nav>
+      <ul data-role="listview">
+        <li><a data-transition="pop" href="#">Home</a></li>
+        <li><a data-transition="pop" href="#lineup">Line Up</a></li>
+        <li><a data-transition="pop" href="#radio">Radio</a></li>
+        <li><a data-transition="pop" href="#location">Location</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- navbar -->
+
     <nav class="menu nav-modal" data-role="header">
       <p class="hide">a</p>
     </nav>
     <div role="main" class="ui-content">
       <section class="center-vertical">
         <h2 class="title-modal">OUR TEAM</h2>
-        <!-- aca estuvo ale programando -->
+        <!-- aca estuvo Lu programando -->
         <!-- carrousel -->
         <div class="wrapper">
           <ul class="carousel" data-target="carousel">
@@ -177,9 +193,13 @@
                 <p class="card-text">Curso noche - 2022</p>
               </div>
             </li>
+
+            <!-- card ends here -->
+
           </ul>
           <div id="button-left">
-            <button data-action="slideLeft"> < </button>
+            <button data-action="slideLeft">
+              < </button>
           </div>
           <div id="button-right">
             <button data-action="slideRight"> > </button>
@@ -367,7 +387,7 @@
     </div>
     <div data-role="footer" class="center-vertical footer-style">
       <div>
-        <button class="button"><a>Creadores</a></button>
+        <button class="button"><a href="#home2">Creadores</a></button>
       </div>
       <div>
         <p class="small-text">Designed by Dreamteam</p>
@@ -381,35 +401,12 @@
 
   <div role="main" class="ui-content">
       <section class="space">
-        <div>
-          <h1 class="title-a">
-            Our <span class="important-text">line up</span>
-          </h1>
 
-          <h3 class="title-e">
-            Check out the <span class="important-text">dates</span> <br />
-            and
-            <span class="important-text">time of the shows</span>
-          </h3>
-
-        </div>
       </section>
 
       
       <section class="center-vertical"></section>
-    </div>
-    <div data-role="footer" class="center-vertical footer-style">
-      <div>
-        <button class="button"><a>Creadores</a></button>
-      </div>
-      <div>
-        <p class="small-text">Designed by Dreamteam</p>
-      </div>
-      <div class="footer-icons">
-        <img class="small-icon" src="./assets/icons/instagram.png" />
-        <img class="small-icon" src="./assets/icons/spotify.png" />
-      </div>
-    </div>
+
   </div>
 
 <!--Acá termina lineup-->
@@ -472,7 +469,7 @@
   </div>
   <div data-role="footer" class="center-vertical footer-style">
     <div>
-      <button class="button"><a>Creadores</a></button>
+      <button class="button"><a href="#home2">Creadores</a></button>
     </div>
     <div>
       <p class="small-text">Designed by Dreamteam</p>
@@ -535,7 +532,7 @@
   </div>
   <div data-role="footer" class="center-vertical footer-style">
     <div>
-      <button class="button"><a>Creadores</a></button>
+      <button class="button"><a href="#home2">Creadores</a></button>
     </div>
     <div>
       <p class="small-text">Designed by Dreamteam</p>
