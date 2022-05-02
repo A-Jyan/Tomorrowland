@@ -53,7 +53,6 @@
 .button-light {
   margin: 0.5rem 0 !important;
   padding: 1rem 1.5rem !important;
-  max-width: 50%;
   text-shadow: none !important;
   letter-spacing: 4px;
   font-family: "Roboto-Light" !important;
@@ -65,7 +64,7 @@
 .button {
   margin: 0.5rem 0 !important;
   padding: 1rem 1.5rem !important;
-  max-width: 40%;
+
   text-shadow: none !important;
   letter-spacing: 4px;
   font-family: "Roboto-Light" !important;
@@ -355,4 +354,8 @@
   width: 100%;
   left: 0;
   transition: all 1s ease;
+}
+
+.icons_footer{
+  padding: 5px;
 }
