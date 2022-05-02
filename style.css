@@ -44,6 +44,9 @@
   padding: 0 0.4rem;
 }
 .space {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 0 8rem 0;
 }
 .button-light {
@@ -250,6 +253,7 @@
   .item p {
     font-size: 1.1rem;
   }
+  
   .button-light {
     max-width: 40%;
     padding: 1rem 0.3rem;
@@ -273,21 +277,10 @@
     padding: 0 0.6rem;
   }
 }
+
 @media (min-width: 1000px) {
   .button-light {
     max-width: 30%;
-    padding: 1rem 0.3rem;
-    text-shadow: none !important;
-    letter-spacing: 4px;
-    font-family: "Roboto-Light" !important;
-  }
-  .button {
-    max-width: 30%;
-  }
-
-  .map-full {
-    width: 100%;
-    margin: 2rem;
   }
   .small-icon {
     max-width: 2%;
