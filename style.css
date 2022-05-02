@@ -52,7 +52,7 @@
 .button-light {
   margin: 0.5rem 0 !important;
   padding: 1rem 1.5rem !important;
-  max-width: 50%;
+  max-width: 80%;
   text-shadow: none !important;
   letter-spacing: 4px;
   font-family: "Roboto-Light" !important;
@@ -64,7 +64,7 @@
 .button {
   margin: 0.5rem 0 !important;
   padding: 1rem 1.5rem !important;
-  max-width: 40%;
+  max-width: 50%;
   text-shadow: none !important;
   letter-spacing: 4px;
   font-family: "Roboto-Light" !important;
@@ -107,6 +107,13 @@
   font-size: 1.1rem;
   text-align: left;
   letter-spacing: 2px;
+}
+.title-f {
+  font-family: "Roboto-Thin";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0.5rem 0;
 }
 .info-a {
   margin: 0;
@@ -188,6 +195,29 @@
 .item:nth-child(2) {
   text-align: right;
 }
+.image-full {
+  width: 100%;
+  margin: 2rem;
+}
+.map-full {
+  width: 100%;
+  margin: 2rem;
+}
+
+.location-container {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.location-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.location-item img {
+  width: 20px;
+  margin: 0 10px;
+}
 
 @media (min-width: 600px) {
   .button-group {
@@ -195,6 +225,7 @@
   }
   .title-a {
     font-size: 2.5rem;
+    text-align: center;
   }
   .title-b {
     font-size: 1.4rem;
@@ -208,6 +239,7 @@
   .title-e {
     font-family: "Roboto-Light";
     font-size: 1.4rem;
+    text-align: center;
   }
   .info-a {
     font-size: 2.5rem;
@@ -220,5 +252,42 @@
   }
   .item p {
     font-size: 1.1rem;
+  }
+  
+  .button-light {
+    max-width: 40%;
+    padding: 1rem 0.3rem;
+    text-shadow: none !important;
+    letter-spacing: 4px;
+    font-family: "Roboto-Light" !important;
+  }
+  .button {
+    max-width: 30%;
+  }
+  .image-full {
+    width: 50%;
+    margin: 2rem;
+  }
+  .map-full {
+    width: 100%;
+    margin: 2rem;
+  }
+  .small-icon {
+    max-width: 3%;
+    padding: 0 0.6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .button-light {
+    max-width: 30%;
+  }
+  .small-icon {
+    max-width: 2%;
+    padding: 0 0.4rem;
+  }
+  .limit {
+    margin: 0 auto;
+    max-width: 70% !important;
   }
 }
